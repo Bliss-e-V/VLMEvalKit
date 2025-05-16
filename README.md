@@ -10,7 +10,11 @@ This fork contains code we used in our paper [SCAM: A Real-World Typographic Rob
 pip install -r requirements_custom_llava.txt
 ```
 
-2. Run benchmarks:
+2. Add LLaVA models
+
+Put the llava model weights in a `llava-checkpoints` folder. You may need to adjust the LLaVA classes/paths in `vlmeval/vlm/llava/llava.py`.
+
+4. Run benchmarks:
 
 ```bash
 python run.py --models llava_scam_custom llava_scam_original --data MMBench_DEV_EN_V11 MME COCO_VAL SEEDBench_IMG TextVQA_VAL OCRBench OCRVQA_TESTCORE
