@@ -4,7 +4,7 @@ This fork contains code we used in our paper [SCAM: A Real-World Typographic Rob
 
 ## Usage
 
-1. Install requirements (best in a new venv):
+1. Install requirements (best in a new venv, using Python 3.13.2):
 
 ```bash
 pip install -r requirements_custom_llava.txt
