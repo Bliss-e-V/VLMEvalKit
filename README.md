@@ -1,3 +1,29 @@
+# VLMEvalKit - SCAM fork
+
+This fork contains code we used in our paper [SCAM: A Real-World Typographic Robustness Evaluation for Multimodal Foundation Models](https://bliss-e-v.github.io/SCAM-project-page/). We share this fork to facilitate the reproducibility of our paper and to assist researchers interested in finetuning and benchmarking their own llava models.
+
+## Usage
+
+1. Install requirements (best in a new venv):
+
+```bash
+pip install -r requirements_custom_llava.txt
+```
+
+2. Run benchmarks:
+
+```bash
+python run.py --models llava_scam_custom llava_scam_original --data MMBench_DEV_EN_V11 MME COCO_VAL SEEDBench_IMG TextVQA_VAL OCRBench OCRVQA_TESTCORE
+```
+
+You can also run evaluations on our typographic robustness evaluation dataset - use `SCAM` as dataset name. Note that, however, the VLMEvalKit evaluation implementation slighly differs from our paper, so results may be impacted.
+
+---
+
+*original readme below*
+
+---
+
 ![LOGO](http://opencompass.openxlab.space/utils/MMLB.jpg)
 
 <b>A Toolkit for Evaluating Large Vision-Language Models. </b>
