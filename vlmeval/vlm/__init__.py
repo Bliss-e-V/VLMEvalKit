@@ -17,6 +17,9 @@ from .llava import (
     LLaVA_Next2,
     LLaVA_OneVision,
     LLaVA_OneVision_HF,
+    LLaVA_SCAM,
+    LLaVA_SCAM_CUSTOM,
+    LLaVA_SCAM_ORIGINAL,
 )
 from .vita import VITA, VITAQwen2
 from .long_vita import LongVITA
